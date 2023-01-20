@@ -3,8 +3,10 @@
   }
 
 .all{
-    background-color: lightgray;
-    height: 800px;
+    background-color: #F3F3F3;
+    
+    padding-top: 106px;
+    padding-bottom: 106px;
    
 }
 .topfixo{
@@ -57,3 +59,36 @@
   #txtBusca::-webkit-input-placeholder{
     color:#000000;
   }
+ .conversa{
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+ }
+ .status{
+    background-color:#DCDCDC;
+ }
+ .privado {
+    background-color:#FFDEDE;
+ }
+ .msg {
+    background-color: #FFFFFF;
+ }
+ .bold{
+    font-weight: 700;
+ }
+.tempo{
+    color:#AAAAAA;
+}
+span {
+    margin-right: 5px;
+}
