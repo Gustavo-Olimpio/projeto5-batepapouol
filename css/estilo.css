@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+
+.all{
+    background-color: lightgray;
+    height: 800px;
+   
+}
+.topfixo{
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 17px 10px 17px;
+}
+.topfixo ion-icon{
+    font-size: 46px;
+    
+}
+.topfixo img{
+    width: 75px;
+    height: 53px;
+}
+.botfixo{
+    background-color: #FFFFFF
+    ;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 22px 10px 22px;
+}
+.botfixo ion-icon{
+    font-size: 30px;
+    
+}
+#txtBusca {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:#000000;
+    border: none;
+    background-color: transparent;
+    width: 145px;
+    height: 30px;
+  }
+  #txtBusca::-webkit-input-placeholder{
+    color:#000000;
+  }
