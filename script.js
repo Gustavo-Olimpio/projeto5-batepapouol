@@ -14,6 +14,7 @@ function cadastrouser(){
 }
 function processar(resposta){
     console.log(resposta);
+    setInterval(buscarmsg,1000);
 }
 function erro(resposta){
     coderro = resposta.response.status;
@@ -53,6 +54,7 @@ function carregamsg(msgs){
             <span class="bold"> ${data[i].to}:</span> 
             ${data[i].text} </div>`;
             } else if (data.type == "private_message"){
+                if (user == data[i].from || user == data[i].to){
                 elemento.innerHTML = elemento.innerHTML + 
                 `<div class="conversa privado"> 
                 <span class="tempo">(${data[i].time})</span>
@@ -61,8 +63,16 @@ function carregamsg(msgs){
                 <span class="bold"> ${data[i].to}:</span> 
                 ${data[i].text} </div>`;
                 }
+            }
     }
     let ultimo = document.querySelectorAll(".conversa");
     console.log(ultimo.length)
     ultimo[ultimo.length-1].scrollIntoView();
+}
+function enviarmsg(){
+    let elemento = document.querySelector('.valor')
+    const dados = {from: user, to: "Todos" , text: elemento.value, type:"message"};
+    const requisicao = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', dados);
+    setInterval(buscarmsg,1000);
+    elemento.value = "";
 }

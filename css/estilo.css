@@ -4,7 +4,7 @@
 
 .all{
     background-color: #F3F3F3;
-    
+    width: 375px;
     padding-top: 106px;
     padding-bottom: 106px;
    
@@ -12,7 +12,7 @@
 .topfixo{
     background-color: #FFFFFF;
     height: 80px;
-    width: 100%;
+    width: 375px;
     position: fixed;
     top:0px;
     left:0px;
@@ -30,10 +30,9 @@
     height: 53px;
 }
 .botfixo{
-    background-color: #FFFFFF
-    ;
+    background-color: #FFFFFF;
     height: 80px;
-    width: 100%;
+    width: 375px;
     position: fixed;
     bottom:0px;
     left:0px;
@@ -60,7 +59,7 @@
     color:#000000;
   }
  .conversa{
-    width: 100%;
+    width: 375px;
     height: 40px;
     background-color: #FFFFFF;
     margin-bottom: 4px;
@@ -91,4 +90,7 @@
 }
 span {
     margin-right: 5px;
+}
+.conteudo{
+    width: 375px;
 }
