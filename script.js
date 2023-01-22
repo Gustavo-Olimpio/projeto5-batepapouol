@@ -75,6 +75,10 @@ function enviarmsg(){
     let elemento = document.querySelector('.valor')
     const dados = {from: user, to: "Todos" , text: elemento.value, type:"message"};
     const requisicao = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', dados);
+    requisicao.catch(erromsg);
     setTimeout(buscarmsg,1000);
     elemento.value = "";
+}
+function erromsg(deuruim){
+    window.location.reload();
 }
